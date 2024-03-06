@@ -7,6 +7,18 @@ body {
   flex-direction: column;
 }
 
+fieldset {
+  border: 5px solid #0b5a92;
+  border-radius: 5px;
+
+  & legend {
+    padding: 0 .5rem;
+    font-size: 1.25rem;
+    color: #ffffff;
+    padding: 0 1rem;
+  }
+}
+
 button {
   --gradient-color: linear-gradient(#0863a5, #1283d1);
   --darker-color: linear-gradient(to bottom, #0006, #0008);
