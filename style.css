@@ -14,6 +14,7 @@ button {
 
   display: flex;
   justify-content: center;
+  align-items: center;
   padding: .75rem 1.5rem;
   font-size: 1rem;
   border: 0;
@@ -26,6 +27,14 @@ button {
   text-shadow: 0 0 6px #000;
   transition: all .25s;
   cursor: pointer;
+
+  & svg {
+    --size: 1.5rem;
+    color: currentColor;
+    margin-right: .5rem;
+    width: var(--size);
+    height: var(--size);
+  }
 
   &.rounded {
     border-radius: 5px;
