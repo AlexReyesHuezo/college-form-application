@@ -14,20 +14,41 @@
           <fieldset>
             <legend>Personal information</legend>
             <div class="personal-info-group">
-              <label for="name">Name</label>
-              <input type="text" id="name" name="name" placeholder="Alexander Antonio Reyes Huezo">
+              <label for="name">Name(s)</label>
+              <input type="text" id="name" name="name" placeholder="Alexander Antonio" required>
             </div>
             <div class="personal-info-group">
-              <label for="email">Email</label>
-              <input type="email" id="email" name="email" placeholder="alexanderreyes@mail.com">
+              <label for="last-name">Last name(s)</label>
+              <input type="text" id="last-name" name="last-name" placeholder="Reyes Huezo" required>
             </div>
             <div class="personal-info-group">
-              <label for="phone">Phone</label>
-              <input type="tel" id="phone" name="phone" placeholder="(+503) 7070 - 2030">
+              <label for="birthday">Date of birth</label>
+              // max value is set to include people with 100 years old or less, and
+              // min value is set to include people with 15 years old or older
+              <input type="date" id="birthday" name="birthday" min="1924-01-01" max="2009-01-01" required>
+            </div>
+            <div class="personal-info-group">
+              <label for="nationality">Nationalities</label>
+              <select name="select-nationality" id="nationality" multiple required>
+                <option value="salvadoran" selected>Salvadoran</option>
+                <option value="american">American</option>
+                <option value="mexican">Mexican</option>
+                <option value="canadian">Canadian</option>
+                <option value="guatemalan">Guatemalan</option>
+                <option value="honduran">Honduran</option>
+              </select>
             </div>
           </fieldset>
           <fieldset>
             <legend>Contact information</legend>
+            <div class="contact-info-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" placeholder="alexanderreyes@mail.com">
+            </div>
+            <div class="contact-info-group">
+              <label for="phone">Phone</label>
+              <input type="tel" id="phone" name="phone" placeholder="(+503) 7070 - 2030">
+            </div>
           </fieldset>
           <fieldset>
             <legend>Academic information</legend>
